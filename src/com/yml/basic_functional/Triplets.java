@@ -19,7 +19,19 @@ public class Triplets {
 			array[i] = in.nextInt();
 		}
 		
-		int count = 0;
+		Set<String> triplets = findTriplets(array, n);
+		
+		out.println("Number of distinct triplets: "+triplets.size());
+		out.println("Distinct Triplets are: ");
+		
+		for(String item: triplets) {
+			out.println(item);
+		}
+		
+	}
+	
+	static Set<String> findTriplets(int array[], int n){
+		
 		Set<String> triplets = new HashSet<String>();
 		
 		for(int i=0;i<n-2;i++)
@@ -27,18 +39,10 @@ public class Triplets {
 				for(int k=j+1;k<n;k++) {
 					if((array[i]+array[j]+array[k]) == 0) {
 						triplets.add("["+array[i]+" "+array[j]+" "+array[k]+"]");
-						count++;
 					}
 				}
 		
-		out.println("Number of distinct triplets: "+count);
-		out.println("Distinct Triplets are: ");
-		
-		for(String item: triplets) {
-			out.println(item);
-		}
-		
-		
+		return triplets;
 	}
 	
 }

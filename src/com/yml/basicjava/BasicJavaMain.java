@@ -7,7 +7,7 @@ public class BasicJavaMain {
 
 	public static void main(String[] args) {
 		
-		WindChill.run(args);
+		Distance.run(args);
 		
 	}
 	

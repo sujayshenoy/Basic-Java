@@ -12,7 +12,7 @@ public class LeapYear {
 		print("Enter the year");
 		int year = in.nextInt();
 		
-		while( String.valueOf(year).length() != 4 || year < 0) {
+		while( year<1000 || year < 0 || year>=10000) {
 			print("Year should be a 4 digit positive number");
 			year = in.nextInt();
 		}

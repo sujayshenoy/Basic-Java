@@ -26,19 +26,27 @@ public class TwoDArray {
 			for(int j=0;j<cols;j++)
 				array[i][j] = in.nextInt();
 		
-		out.println("Array elements are: ");
-		for(int i=0;i<rows;i++) {
-			for(int j=0;j<cols;j++)
-				out.print(array[i][j]+" ");
-			out.println();
-		}
-				
+		printArray(array, rows, cols);
+			
 		in.close();
 		out.flush();
 		out.close();
 		
 	}
 	
-	
+	static void printArray(int array[][],int rows,int cols) {
+		
+		PrintWriter out = new PrintWriter(System.out,true);
+		
+		out.println("Array elements are: ");
+		for(int i=0;i<rows;i++) {
+			for(int j=0;j<cols;j++)
+				out.print(array[i][j]+" ");
+			out.println();
+		}
+		
+		out.close();
+		
+	}
 	
 }

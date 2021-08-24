@@ -1,4 +1,4 @@
-package com.yml.basicjava;
+package com.yml.basic_functional;
 
 import java.io.PrintWriter;
 import java.util.*;

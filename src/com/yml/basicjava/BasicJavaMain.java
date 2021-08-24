@@ -6,7 +6,7 @@ public class BasicJavaMain {
 
 	public static void main(String[] args) {
 		
-		QuotientRemainder.run();
+		Swap.run();
 		
 	}
 	

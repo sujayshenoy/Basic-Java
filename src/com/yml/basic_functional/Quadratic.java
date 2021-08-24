@@ -17,6 +17,14 @@ public class Quadratic {
 		out.println("Enter value for c");
 		int c = in.nextInt();
 		
+		calculateRoots(a, b, c);
+		
+	}
+	
+	static void calculateRoots(int a,int b,int c) {
+		
+		PrintWriter out = new PrintWriter(System.out, true);
+		
 		double delta = Math.pow(b, 2) - (4*a*c);
 		double root1 = (-b + Math.sqrt(delta))/(2*a);
 		double root2 = (-b - Math.sqrt(delta))/(2*a);

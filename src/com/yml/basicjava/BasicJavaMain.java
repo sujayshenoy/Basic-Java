@@ -7,7 +7,7 @@ public class BasicJavaMain {
 
 	public static void main(String[] args) {
 		
-		TwoDArray.run();
+		Triplets.run();
 		
 	}
 	

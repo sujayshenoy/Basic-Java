@@ -8,12 +8,12 @@ public class PowerOfTwo {
 		
 		int power = Integer.parseInt(args[0]);
 		
+		while(power<0 || power > 31) {
+			print("Power should be between 0 and 31");
+			System.exit(0);
+		}
+		
 		for(int i=0;i<=power;i++) {
-			
-			if(i > 31) {
-				print("Integer Overflow");
-				break;
-			}
 			
 			print("2^"+i+" = "+(int)Math.pow(2, i));
 			

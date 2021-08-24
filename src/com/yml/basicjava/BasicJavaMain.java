@@ -7,7 +7,39 @@ public class BasicJavaMain {
 
 	public static void main(String[] args) {
 		
-		TwoDArray.run();
+		//Core Programs
+		
+//		FlipCoin.run();
+//		
+//		LeapYear.run();
+//		
+//		PowerOfTwo.run(args);
+//		
+//		HarmonicNumber.run();
+//		
+//		Factors.run();
+//		
+//		QuotientRemainder.run();
+//		
+//		Swap.run();
+//		
+//		EvenOdd.run();
+//		
+//		VowelConsonent.run();
+//		
+//		LargeThree.run();
+		
+		//Functional Programs
+		
+//		TwoDArray.run();
+//		
+//		Triplets.run();
+//		
+//		Distance.run(args);
+//		
+//		Quadratic.run();
+//		
+//		WindChill.run(args);
 		
 	}
 	

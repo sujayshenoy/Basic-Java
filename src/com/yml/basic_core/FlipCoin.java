@@ -26,8 +26,9 @@ public class FlipCoin {
 			flip();
 		}
 		
-		int perc = getPercentage();
-		print("HEAD/TAIL Percentage: "+perc+"%");
+		int perc = getHeadPercentage();
+		print("HEAD Percentage: "+perc+"%");
+		print("TAIL Perentage: "+(100-perc)+"%");
 		
 		in.close();
 		
@@ -56,10 +57,12 @@ public class FlipCoin {
 		out.flush();
 	}
 	
-	private static int getPercentage() {
+	private static int getHeadPercentage() {
+		
 		int headCount = count[HEAD_FLAG];
 		int tailCount = count[TAIL_FLAG];
 		int perc;
+		
 		if( headCount == 0 )
 			perc = 0;
 		else if ( tailCount == 0 )
@@ -69,6 +72,7 @@ public class FlipCoin {
 		
 		print("HEAD: "+headCount);
 		print("TAIL: "+tailCount);
+		print("");
 		
 		return perc;
 			

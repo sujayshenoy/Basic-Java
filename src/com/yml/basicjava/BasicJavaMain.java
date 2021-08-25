@@ -46,7 +46,8 @@ public class BasicJavaMain {
 		//Logical Programs
 		
 //		Fibonacci.run();
-		PerfectNumber.run();
+//		PerfectNumber.run();
+		PrimeNumber.run();
 	}
 	
 }

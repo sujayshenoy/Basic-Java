@@ -2,6 +2,8 @@ package com.yml.basicjava;
 
 import com.yml.basic_core.*;
 import com.yml.basic_functional.*;
+import com.yml.basic_logical.*;
+
 
 public class BasicJavaMain {
 
@@ -41,6 +43,12 @@ public class BasicJavaMain {
 //		
 //		WindChill.run(args);
 		
+		//Logical Programs
+		
+//		Fibonacci.run();
+//		PerfectNumber.run();
+//		PrimeNumber.run();
+		Coupon.run();
 	}
 	
 }

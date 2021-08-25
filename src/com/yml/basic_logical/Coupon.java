@@ -17,7 +17,7 @@ public class Coupon {
 		out.println("Number of codes?");
 		int n = in.nextInt();		
 		
-		out.println("Enter the 4 digit codes");
+		out.println("Enter the coupon codes");
 		
 		while(n-- > 0) {
 			coupons.add(in.nextInt());
@@ -62,17 +62,9 @@ public class Coupon {
 
 	private static int nextCoupon(){
 
-		int code = 0;
 		Random rand = new Random();
-		
-		int i = 4;
-		while(i>0){
-			int coupon = rand.nextInt(9);
-			code = (code*10) + coupon;
-			i--;
-		}
-
-		return code;
+		int coupon = rand.nextInt(9);
+		return coupon;
 
 	}
 	

@@ -52,7 +52,7 @@ public class Coupon {
 
 	private static boolean isUnique(int code) {
 
-		int res = Collections.binarySearch(coupons, code);
+		int res = coupons.indexOf(code);
 		if(res < 0)
 			return true;
 		else

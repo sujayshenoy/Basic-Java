@@ -12,6 +12,8 @@ public class VowelConsonent {
 		print("Enter the Character");
 		char c = in.next().charAt(0);
 		
+		c = Character.toLowerCase(c);
+		
 		if(c == 'a' || c == 'e' || c == 'i' || c == 'o' || c == 'u') {
 			print(c+" is a vowel");
 		}

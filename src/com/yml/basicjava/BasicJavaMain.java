@@ -47,7 +47,8 @@ public class BasicJavaMain {
 		
 //		Fibonacci.run();
 //		PerfectNumber.run();
-		PrimeNumber.run();
+//		PrimeNumber.run();
+		Reverse.run();
 	}
 	
 }

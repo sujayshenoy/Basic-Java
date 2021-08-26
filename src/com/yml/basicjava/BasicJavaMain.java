@@ -3,6 +3,7 @@ package com.yml.basicjava;
 import com.yml.basic_core.*;
 import com.yml.basic_functional.*;
 import com.yml.basic_logical.*;
+import com.yml.junit.*;
 
 
 public class BasicJavaMain {
@@ -48,7 +49,7 @@ public class BasicJavaMain {
 //		Fibonacci.run();
 //		PerfectNumber.run();
 //		PrimeNumber.run();
-		Coupon.run();
+		VendingMachine.run();
 	}
 	
 }

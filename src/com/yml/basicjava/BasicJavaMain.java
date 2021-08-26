@@ -1,5 +1,7 @@
 package com.yml.basicjava;
 
+import java.io.PrintWriter;
+
 import com.yml.basic_core.*;
 import com.yml.basic_functional.*;
 import com.yml.basic_logical.*;
@@ -49,7 +51,17 @@ public class BasicJavaMain {
 //		Fibonacci.run();
 //		PerfectNumber.run();
 //		PrimeNumber.run();
-		VendingMachine.run();
+		// VendingMachine.run();
+
+		PrintWriter out = new PrintWriter(System.out,true);
+
+		int d = Integer.parseInt(args[0]);
+		int m = Integer.parseInt(args[1]);
+		int y = Integer.parseInt(args[2]);
+
+		int day = Util.dayOfWeek(d, m, y);
+		out.println("Day of the week: " + day);
+
 	}
 	
 }

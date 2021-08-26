@@ -26,4 +26,13 @@ final public class Util {
         }
     }
 
+    public static double monthlyPayment(double principal, int year, double rate){
+        
+        double effectiveRate = rate / (12 * 100);
+        double n = 12 * year;
+
+        return (principal*effectiveRate)/(1-Math.pow(1+effectiveRate, -n));
+
+    }
+
 }

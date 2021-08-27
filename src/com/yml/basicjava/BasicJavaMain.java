@@ -103,15 +103,17 @@ public class BasicJavaMain {
 		// double result = Util.sqrt(c);
 		// out.println("Square root of "+c+" is : "+result);
 		
-		out.println("Enter the decimal number to be converted to binary");
+		// out.println("Enter the decimal number to be converted to binary");
 		
-		int num = in.nextInt();
-		while (num < 0) {
-			System.out.println("Please enter a positive number");
-			num = in.nextInt();
-		}
+		// int num = in.nextInt();
+		// while (num < 0) {
+		// 	System.out.println("Please enter a positive number");
+		// 	num = in.nextInt();
+		// }
 		
-		Util.toBinary(num);
+		// Util.toBinary(num);
+
+		Binary.run();
 
 		in.close();
 		out.close();

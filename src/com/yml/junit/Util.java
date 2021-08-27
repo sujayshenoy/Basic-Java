@@ -35,4 +35,14 @@ final public class Util {
 
     }
 
+    public static double sqrt(int c) {
+		double t = c;
+		double epsilon = 0.000000000000001;
+
+		while (Math.abs(t - (c / t)) > (epsilon * t)) {
+			t = ((c / t) + t) / 2;
+		}
+		return t;
+	}
+
 }

@@ -90,13 +90,18 @@ public class BasicJavaMain {
 		// else
 		// 	out.println("Temperature in Celsius: "+String.format("%.2f", result));
 		
-		double principal = Double.parseDouble(args[0]);
-		int year = Integer.parseInt(args[1]);
-		double rate = Double.parseDouble(args[2]);
+		// double principal = Double.parseDouble(args[0]);
+		// int year = Integer.parseInt(args[1]);
+		// double rate = Double.parseDouble(args[2]);
 
-		double monthlyPayment = Util.monthlyPayment(principal, year, rate);
+		// double monthlyPayment = Util.monthlyPayment(principal, year, rate);
 
-		out.println("Monthly Payment: "+String.format("%.2f", monthlyPayment));
+		// out.println("Monthly Payment: "+String.format("%.2f", monthlyPayment));
+
+		out.println("Enter a non negative number of which the square root has to be computed");
+		int c = in.nextInt();
+		double result = Util.sqrt(c);
+		out.println("Square root of "+c+" is : "+result);
 
 		in.close();
 		out.close();

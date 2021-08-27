@@ -98,10 +98,20 @@ public class BasicJavaMain {
 
 		// out.println("Monthly Payment: "+String.format("%.2f", monthlyPayment));
 
-		out.println("Enter a non negative number of which the square root has to be computed");
-		int c = in.nextInt();
-		double result = Util.sqrt(c);
-		out.println("Square root of "+c+" is : "+result);
+		// out.println("Enter a non negative number of which the square root has to be computed");
+		// int c = in.nextInt();
+		// double result = Util.sqrt(c);
+		// out.println("Square root of "+c+" is : "+result);
+		
+		out.println("Enter the decimal number to be converted to binary");
+		
+		int num = in.nextInt();
+		while (num < 0) {
+			System.out.println("Please enter a positive number");
+			num = in.nextInt();
+		}
+		
+		Util.toBinary(num);
 
 		in.close();
 		out.close();
